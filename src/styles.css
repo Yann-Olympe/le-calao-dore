@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --foret-camerounaise: #2D4A3E;
+  --terre-rouge: #C84B31;
+  --soleil-tropical: #E9B824;
+  --sable-kribi: #FAF3E0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--sable-kribi)!important;
+  color: var(--foret-camerounaise);
+}

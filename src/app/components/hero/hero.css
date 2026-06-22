@@ -1,0 +1,50 @@
+.hero-section {
+  background: linear-gradient(rgba(23, 84, 59, 0.75), rgba(45, 74, 62, 0.85)), 
+              url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+  
+  height: 75vh; /* Le hero prend 75% de la hauteur de l'écran */
+  color: #FAF3E0; /* Texte en couleur Sable Kribi */
+}
+
+.hero-content h1 {
+  color: #E9B824; /* Nom du restaurant en Or Soleil tropical */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour détacher le texte */
+}
+
+/* Style du bouton avec la couleur Terre Rouge */
+.btn-cta {
+  background-color: #C1440E; /* Couleur Terre Rouge */
+  color: #FAF3E0; /* Texte en couleur Sable Kribi */
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 60px; /* Bords arrondis pour un style moderne */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transition douce pour l'effet au survol */
+    animation: pulsation 2s infinite ease-in-out;
+
+  
+}
+/* Petit effet au survol du bouton */
+.btn-cta:hover {
+  background-color: #b03f27; /* Un rouge un peu plus sombre */
+  color: #ffffff;
+  transform: scale(1.05); /* Le bouton grossit légèrement */
+  transform: scale(1.05) translateY(-4px);
+  
+  /* On ajoute une ombre plus forte pour accentuer l'effet de survol */
+}
+@keyframes pulsation {
+  0% {
+    transform: scale(1); /* Taille normale au début */
+    box-shadow: 0 0 0 0 rgba(200, 75, 49, 0.7); /* Pas d'ombre */
+  }
+  50% {
+    transform: scale(1.05); /* Grossit légèrement au milieu */
+    box-shadow: 0 0 0 15px rgba(200, 75, 49, 0); /* Crée un effet de halo qui s'estompe */
+  }
+  100% {
+    transform: scale(1); /* Revient à la taille normale à la fin */
+    box-shadow: 0 0 0 0 rgba(200, 75, 49, 0);
+  }
+}

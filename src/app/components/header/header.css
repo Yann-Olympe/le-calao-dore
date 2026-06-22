@@ -1,0 +1,70 @@
+header {
+  background-color: #2D4A3E; /* Vert forêt */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.logo {
+  color: #E9B824; /* Or Soleil */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* --- DESIGN POUR ORDINATEUR (Par défaut) --- */
+.burger {
+  display: none; /* On cache le bouton burger sur ordinateur */
+}
+
+.nav-desktop {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-desktop a {
+  color: #FAF3E0; /* Sable Kribi */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-desktop a.active {
+  color: #E9B824;
+  border-bottom: 2px solid #E9B824;
+}
+
+/* --- DESIGN DU MENU MOBILE (Quand il s'ouvre) --- */
+.nav-mobile {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #2D4A3E;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.nav-mobile a {
+  color: #FAF3E0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* --- LE RESPONSIVE BASIC (Écrans de moins de 900px) --- */
+@media (max-width: 899px) {
+  .burger {
+    display: block; /* On montre le bouton burger sur petit écran */
+    background: none;
+    border: none;
+    color: #E9B824;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-desktop {
+    display: none; /* On cache complètement le menu horizontal de l'ordinateur */
+  }
+}
