@@ -3,8 +3,8 @@
     "outputDirectory": "dist/le-calao-dore/browser",
     "rewrites": [
         {
-            "sources": "/(*)",
-            "destination": "/indewhtml"
+            "sources": "/(.*)",
+            "destination": "/index.html"
         }
     ]
 }
