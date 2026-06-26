@@ -3,7 +3,7 @@
     "outputDirectory": "dist/le-calao-dore/browser",
     "rewrites": [
         {
-            "sources": "/(.*)",
+            "source": "/(.*)",
             "destination": "/index.html"
         }
     ]
