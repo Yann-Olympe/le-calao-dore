@@ -20,8 +20,7 @@
   border: none;
   border-radius: 60px; /* Bords arrondis pour un style moderne */
   cursor: pointer;
-  transition: all 0.3s ease; /* Transition douce pour l'effet au survol */
-    animation: pulsation 2s infinite ease-in-out;
+    animation: pulsation 3s infinite ease-in-out;
 
   
 }
@@ -31,6 +30,7 @@
   color: #ffffff;
   transform: scale(1.05); /* Le bouton grossit légèrement */
   transform: scale(1.05) translateY(-4px);
+
   
   /* On ajoute une ombre plus forte pour accentuer l'effet de survol */
 }
@@ -46,5 +46,20 @@
   100% {
     transform: scale(1); /* Revient à la taille normale à la fin */
     box-shadow: 0 0 0 0 rgba(200, 75, 49, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh; /* Réduit la hauteur du hero sur les écrans plus petits */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Réduit la taille du texte pour les petits écrans */
+  }
+
+  .btn-cta {
+    padding: 10px 20px; /* Ajuste le padding du bouton pour les petits écrans */
+    font-size: 1rem; /* Réduit la taille de la police du bouton */
   }
 }
